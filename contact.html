@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /*border: 1px solid black;*/
+      }
+      .navimg{
+        width: 30px;
+        margin: 10px;
+      }
+      .navbar-brands{
+        display: block;
+        position: relative;
+        width: 40%;
+        left: 2%;
+        height: auto;
+      }
+  
+      .logo{
+        width: 30%;
+        height: auto;
+      }
+      form{
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      input , textarea{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-weight: 500;
+        color: black;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+      }
+      #bug{
+        margin-top: 150px;
+      }
+      button{
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 500;
+        color: white;
+        background-color: rgb(41, 35, 78);
+        width: 50%;
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        left: 25%;
+        margin-top: 25px;
+        border: none;
+      }
+      h1{
+        font-size: 50px;
+        color: white;
+        padding-bottom: 25px;
+      }
+      #bug a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 25px;
+      }
+      h3{
+        font-size: 30px;
+      }
+
+      
+    </style>
+</head>
+<body style="background-image: url('resources/background.png');">
+
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+            <div class="navbar-brands">
+              <a class="nav-link" href="index.html"><img src="resources/logo.png" class="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px;">
+                <ul class="navbar-nav" style="display:flex; justify-content:end;">
+                    <a href="SignIn.html" class="signin" style="color: white; font-weight: 400;">Signin/Signup</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <h1>Get in touch</h1>
+            <form action="https://formsubmit.co/fedzkie25@gmail.com" method="POST">
+                <input type="text" name="name"  class="form-control" placeholder="Name" required>
+                <input type="email" name="email" class="form-control"  placeholder="Email" required>
+                <input type="text" name="title" class="form-control"  placeholder="Subject" required>
+                <textarea type="textarea" name="message" placeholder="Message" id="" cols="30" rows="10" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="col" id="bug">
+            <h3>Did you encounter a bug?</h3>
+            <a href="report.html">Report</a>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>

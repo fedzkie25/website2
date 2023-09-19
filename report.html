@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eabe26cd9e.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navimg{
+        width: 30px;
+        margin: 10px;
+      }
+      .navbar-brands{
+        display: block;
+        position: relative;
+        width: 40%;
+        left: 2%;
+        height: auto;
+      }
+  
+      .logo{
+        width: 30%;
+        height: auto;
+      }
+      .container{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }.card{
+        background: transparent;
+        border: none;
+        padding: 10px;
+      }
+      form{
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      input{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 7px;
+        font-weight: 500;
+        color: black;
+        border-radius: 10px;
+        width: 100%;
+        outline: none;
+        border: none;
+      }
+      textarea{
+        margin-top: 70px;
+        display: flex;
+        margin-left: 15px;
+        bottom: 50%;
+        height: 80%;
+        border-radius: 10px;
+        position: relative;
+        width: 90%;
+      }
+      button{
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 500;
+        color: white;
+        background-color: rgb(41, 35, 78);
+        width: 50%;
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        left: 70%;
+        margin-top: 25px;
+        bottom: -15%;
+        border: none;
+      }
+      h1{
+        font-size: 50px;
+        color: white;
+        padding-bottom: 25px;
+        left: 0%;
+        display: flex;
+        position: relative;
+      }
+      label{
+        text-align: start;
+        display: flex;
+        color: white;
+      }
+      input[type="file"]{
+        display: none;
+      }
+      .label{
+        display: flex;
+        user-select: none;
+        cursor: pointer;
+        color: black;
+        font-size: 25px;
+      }
+    </style>
+</head>
+<body style="background-image: url('resources/background.png');">
+
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+            <div class="navbar-brands">
+              <a class="nav-link" href="index.html"><img src="resources/logo.png" class="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px;">
+                <ul class="navbar-nav" style="display:flex; justify-content:end;">
+                    <a href="SignIn.html" class="signin" style="color: white; font-weight: 400;">Signin/Signup</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1>Report a bug</h1>
+        <div class="row row-cols-lg-2 row-cols-md-2 g-5 d-flex">
+            <div class="col">
+              <div class="card w-100">
+                <form action="">
+                    <input type="text" class="form-control"  placeholder="Name" required><br>
+                    <input type="email" class="form-control"  placeholder="Email" required>
+                    <label>Date and time you first noticed the bug</label><br>
+                    <input type="date" style="width: 50%;">
+                    <input type="time" style="width: 50%;"><br>
+                    <label>Supporting images</label><br>
+                    <label class="label"  for="uploadBtn"><i class="fa-solid fa-cloud-arrow-up"></i></label>
+                    <input type="file" id="uploadBtn">
+                    <label class="label"  for="uploadBtn"><i class="fa-solid fa-cloud-arrow-up"></i></label>
+                    <input type="file" id="uploadBtn">
+                    <label class="label"  for="uploadBtn"><i class="fa-solid fa-cloud-arrow-up"></i></label>
+                    <input type="file" id="uploadBtn">
+                    <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+            <div class="col" id="textarea">
+                <div class="card w-100">
+                    <textarea placeholder="Detailed description" cols="30" rows="10" ></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

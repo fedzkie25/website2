@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navimg{
+        width: 30px;
+        margin: 10px;
+      }
+      .navbar-brands{
+        display: block;
+        position: relative;
+        width: 40%;
+        left: 2%;
+        height: auto;
+      }
+  
+      .logo{
+        width: 30%;
+        height: auto;
+      }
+      .container{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        position: absolute;
+        padding: 20px;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+      }
+      .card{
+        width: 40%;
+        height: 60vh;
+        background: none;
+        align-items: center;
+        text-align: center;
+        border-radius: 20px;
+        overflow: hidden;
+        border: none;
+        object-fit: contain;
+      }
+      .box{
+            width: 500px;
+            min-height: 500px;
+            padding: 50px;
+            background: lightblue;
+            text-align: center;
+            border-radius: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }    
+        .box1{
+            width: 500px;
+            min-height: 500px;
+            padding: 50px;
+            background: lightblue;
+            text-align: center;
+            border-radius: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box h2{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .box1 h2{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .box h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .box1 h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .box h1 span{
+            font-size: 20px;
+            color: black;
+        }
+        .box1 h1 span{
+            font-size: 20px;
+            color: black;
+        }
+        .box b{
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .box p{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .box1 p{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .box button{
+            display: block;
+            margin: 30px auto;
+            border: 0;
+            outline: 0;
+            padding: 12px 40px;
+            border-radius: 30px;
+            background-color: yellowgreen;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .box1 button{
+            display: block;
+            margin: 30px auto;
+            border: 0;
+            outline: 0;
+            padding: 12px 40px;
+            border-radius: 30px;
+            background-color: yellowgreen;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .box img{
+            width: 180px;
+        }
+        .box1 img{
+            width: 180px;
+        }
+        .ribbon-wrap{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        .ribbon-wrap1{
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        .ribbon-wrap::before, .ribbon-wrap::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background: yellowgreen;
+            z-index: -1;
+        }.ribbon-wrap1::before, .ribbon-wrap1::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background: yellowgreen;
+            z-index: -1;
+        }
+        .ribbon-wrap::before{
+            top: 0;
+            left: 0;
+        }
+        .ribbon-wrap1::before{
+            top: 0;
+            left: 0;
+        }
+        .ribbon-wrap::after{
+            bottom: 0;
+            right: 0;
+        }
+        .ribbon-wrap1::after{
+            bottom: 0;
+            right: 0;
+        }
+        .ribbon{
+            width: 225px;
+            text-align: center;
+            padding: 8px 0;
+            background: yellowgreen;
+            position: absolute;
+            transform: rotate(45deg);
+            left: -17%;
+            top: 29%;
+            font-weight: 600;
+        }
+        .ribbon1{
+            width: 225px;
+            text-align: center;
+            padding: 8px 0;
+            background: yellowgreen;
+            position: absolute;
+            transform: rotate(45deg);
+            left: -17%;
+            top: 29%;
+            font-weight: 600;
+        }
+        .head{
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          margin-bottom: 20px;
+          position: absolute;
+          top:10%;
+          overflow: hidden;
+          z-index: 1;
+          object-fit: contain;
+        }
+        .head h1{
+          font-size: 60px;
+          color: white;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body style="background-image: url('resources/background.png');">
+
+    
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+            <div class="navbar-brands">
+              <a class="nav-link" href="index.html"><img src="resources/logo.png" class="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px;">
+                <ul class="navbar-nav" style="display:flex; justify-content:end;">
+                    <a href="SignIn.html" class="signin" style="color: white; font-weight: 400;">Signin/Signup</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!---    <section class="container-">
+      <h1>Pick your plan</h1>
+    </section> -->
+
+    <div class="container">
+        <div class="head container-">
+            <h1>Pick your plan</h1>
+        </div>
+        <div class="card">
+          <div class="hero">
+            <div class="box">
+                <h2>Monthly</h2>
+                <h1 id="opt1">$2.99<span>/month</span></h1>
+                <b></b>
+                <p>Billed monthly</p>
+                <button onclick="location.href='payment3.html'" id="opt1-Btn">SUBSCRIBE</button>
+                <img src="resources/logo.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="hero1">
+            <div class="box1">
+                <h2>Annual</h2>
+                <h1>$23.88<span>/annual</span></h1>
+                <b></b>
+                <p>$1.99 Billed monthly</p>
+                <button id="opt2-Btn" onclick="location.href='payment3.html'">SUBSCRIBE</button>
+                <img src="resources/logo.png" alt="">
+    
+                <div class="ribbon-wrap1">
+                    <div class="ribbon1">BEST VALUE</div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<script>
+
+  // Get the button elements
+  var button1 = document.getElementById('opt1-Btn');
+  var button2 = document.getElementById('opt2-Btn');
+
+  // Add click event listeners to the buttons
+  button1.addEventListener('click', function() {
+    // Get the value to be sent for Button 1
+    var valueToSend = "$2.99";
+
+    // Store the value in localStorage
+    localStorage.setItem('dataToSend', valueToSend);
+
+    // Redirect to the second page
+    window.location.href = "payment3.html";
+  });
+
+  button2.addEventListener('click', function() {
+    // Get the value to be sent for Button 2
+    var valueToSend = "$23.88";
+
+    // Store the value in localStorage
+    localStorage.setItem('dataToSend', valueToSend);
+
+    // Redirect to the second page
+    window.location.href = "payment3.html";
+  });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/eabe26cd9e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navimg{
+        width: 30px;
+        margin: 10px;
+      }
+      .navbar-brands{
+        display: block;
+        position: relative;
+        width: 40%;
+        left: 2%;
+        height: auto;
+      }
+  
+      .logo{
+        width: 30%;
+        height: auto;
+      }
+      .carousel{
+        width: 60%;
+        height: 50%;
+        display: flex;
+        bottom: 0;
+        padding: 10px;
+        position: relative;
+        right: 2%;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .carousel-item img{
+        width: 300px;
+        height: 400px;
+      }
+      .carousel-item{
+        padding-bottom: 60px;
+      }
+      .carousel-inner{
+        height: 100%;
+      }
+      .carousel-caption{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 0%;
+      }
+      .carousel-caption h5{
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+      }
+      .banner{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      .banner h3{
+        color: white;
+        font-size: 35px;
+        font-weight: 700px;
+      }
+      .card-div{
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        bottom: 25%;
+        height: 50vh;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .card{
+        padding: 10px;
+      }
+      .maindiv{
+        width: 100%;
+        height: 100vh;
+      }
+      footer {
+        border-top: 1px solid white;
+      }
+      .container li{
+        list-style: none;
+        text-align:start;
+      }
+      .container h5{
+        text-align:start;
+        padding-left: 15px;
+      }
+      li img{
+        width: 50px;
+      }
+      li a{
+        color: white;
+        text-decoration: none;
+      }
+      .review{
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      }
+      .review-text{
+        background: lightgreen;
+        width: 100%;
+        height: 350px;
+        position: relative;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 2%;
+        overflow: hidden;
+      }
+      .user-text{
+        width: 80%;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+      }
+      .user-text .fas{
+        font-size: 30px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+      }
+      .user-text span{
+        display: block;
+        font-size: 15px;
+        margin-top: 60px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .review-pic{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .user-pic{
+        width: 75px;
+        padding: 5px;
+        border-radius: 50%;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .user-text.active-text{
+        display: block;
+        animation: moveup 1s linear forwards;
+      }
+      .user-pic.active-pic{
+        width: 100px;
+        border: 3px solid lightgreen;
+      }
+      @keyframes moveup {
+          0%{
+            margin-top: 25px;
+          }
+          100%{
+            margin-top: 0px;
+          }
+      }
+      h2{
+        color: white;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 700;
+      }
+      .container.for-review{
+        text-align: center;
+      }
+    </style>
+   
+</head>
+<body style="background-image: url('resources/background.png');">
+    <nav class="navbar navbar-expand-lg" >
+        <div class="container-fluid">
+            <div class="navbar-brands">
+              <a class="nav-link" href="index.html"><img src="resources/logo.png" class="logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown" style="margin-right: 40px;">
+                <ul class="navbar-nav" style="display:flex; justify-content:end;">
+                    <a href="SignIn.html" class="signin" style="color: white; font-weight: 400;">Signin/Signup</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <div class="maindiv container-fluid">
+    <div class="banner">
+      <h3>Ignite your focus. <br> Supercharge your productivity. <br> All from a single screen.</h3>
+    </div>
+
+    <div id="Autoplaying" class="carousel slide container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="resources/edited icons/weather.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Weather</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resources/edited icons/calculator.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Calculator</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resources/edited icons/calendar.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Calendar</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resources/edited icons/todo.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Todo</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resources/edited icons/spotify.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Spotify</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="resources/edited icons/notepad.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-lg-block">
+              <h5>Notepad</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#Autoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#Autoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!-----Review-->
+<div class="container for-review">
+    <h2>What our users say</h2>
+  <div class="review">
+      <div class="review-text">
+          <div class="user-text active-text">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>I cannot recommend Focusd enough! I cannot imagine my study sessions without it. The distraction-free environment and built-in productivity tools have transformed my productivity levels. This virtual study space is a must-have for every serious student.</p>
+              <span>Zenna M.</span>
+          </div>
+          <div class="user-text">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>Focusd is a total game-changer for me. The Pomodoro timer keeps me focused, helps me break down my study sessions into manageable chunks, and encourages regular breaks, while the Spotify player creates a soothing study atmosphere.</p>
+            <span>Angelica A.</span>
+        </div>
+        <div class="user-text">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>The Pomodoro timer, coupled with the Spotify player, creates a perfect harmony for deep work. The integrated to-do lists and note-taking features help me stay organized and make progress on my tasks. It's a true productivity booster.</p>
+          <span>Lily G.</span>
+      </div>
+      <div class="user-text">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>I'm absolutely hooked on Focusd. Its productivity features work seamlessly together to optimize my workflow. And the backgrounds transport me to a calm and inspiring space, helping me stay focused and motivated throughout the workday.</p>
+        <span>Travis B.</span>
+    </div>
+      </div>
+        <div class="review-pic">
+            <img src="resources/review/pic1.png" class="user-pic active-pic" onclick="displayReview()">
+            <img src="resources/review/pic2.png" class="user-pic" onclick="displayReview()">
+            <img src="resources/review/pic3.png" class="user-pic" onclick="displayReview()">
+            <img src="resources/review/pic4.png" class="user-pic" onclick="displayReview()">
+        </div>
+  </div>      
+</div>
+
+  <!-----Footer------>
+  <footer class="text-white pt-5 pb-4 mb-1">
+    <div class="container-fluid">
+      <div class="navbar-brands">
+        <a class="nav-link" href="index.html"><img src="resources/logo.png" class="logo"></a>
+      </div>
+      <div class="container text-center text-md-start">
+       <div class="row text-center text-md-end">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5>&nbsp;&nbsp;Company</h5>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#container">Reviews</a></li>
+                  <li><a href="#">Terms</a></li>
+                </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5>&nbsp;&nbsp;Products</h5>
+                <ul>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5>&nbsp;&nbsp;Account</h5>
+                <ul>
+                  <li><a href="SignIn.html">Sign in</a></li>
+                  <li><a href="SignIn.html">Sign up</a></li>
+                </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5>&nbsp;&nbsp;Help</h5>
+                <ul>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us</h5>
+                <ul style="display: flex; flex-direction:row; justify-content:space-evenly;">
+                  <li><a href="#"><img src="resources/icons/instagram.png"></a></li>
+                  <li><a href="#"><img src="resources/icons/facebook.png"></a></li>
+                </ul>
+          </div>
+       </div>   
+      </div> 
+      <p style="padding-left: 15px;">&copy; 2023 Focusd. All rights reserved.</p>
+    </div>
+
+
+  </footer>  
+  </div>
+  
+  <script>
+    let userTexts = document.getElementsByClassName("user-text");
+    let userPics = document.getElementsByClassName("user-pic");
+
+    function displayReview(){
+        for(userPic of userPics){
+            userPic.classList.remove("active-pic");
+        }
+        for(userText of userTexts){
+            userText.classList.remove("active-text");
+        }
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+    }
+</script>
+  
+</body>
+</html>

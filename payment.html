@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment $2.99</title>
+  <link rel="stylesheet" href="css/payment.css">
+  <script src="js/payment.js"></script>
+</head>
+<body style="background-image: url('resources/background.png');">
+    <div class="container">
+        <h3>Checkout</h3>
+        <h1>Payment Method</h1>
+        <form action="">
+            <label for="country">
+                <select name="country" id="country">
+                    <option value="Select">Select...</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                </select>
+            </label>
+            <label for="cardno">CardNumber
+                <input type="text" name="cardno" id="cardno" maxlength="19" onkeypress="cardspace()"/> 
+            </label>
+            <div class="float">
+              <label for="validtill">Valid till
+                <input type="text" name="validtill" id="validtill" maxlength="7" onkeypress="addSlashes()">
+              </label>
+              <label for="cvv">CVV
+                <input type="text" name="cvv" id="cvv" maxlength="3">
+              </label>
+            </div>
+              <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <p>Payment Address is the same as the Delivery Address</p>
+              </label>
+              <button>Pay $2.99</button>
+              
+        </form>
+    </div>
+</body>
+</html>
